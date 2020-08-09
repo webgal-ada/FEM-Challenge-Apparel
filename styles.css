@@ -1,21 +1,25 @@
-/*<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,700;1,600;1,700&display=swap');
 
-/* font-family: 'Josefin Sans', sans-serif; */
+:root {
+  var--desaturatedRose: hsl(0, 93%, 68%);
+}
+
 html {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 
 body {
-  margin: 0 auto;
-  /* width: 100vw; */
+  margin: 0;
+  width: 100vw;
   font-size: 16px;
   font-family: Josefin Sans, sans-serif;
 }
 
-.header {
+.BA-header {
   background-color: #FFF;
+  text-align: left;
 }
 
 .logo {
@@ -23,65 +27,88 @@ body {
   padding: 23px;
 }
 
-.container {
+.BA-mainTitle {
   text-align: center;
-  padding: 55px;
+  width: 100vw;
+  padding-top: 40px;
 }
 
-.main-text {
-  background-image: url("images/bg-pattern-desktop.svg");
-  /* color: hsl(0, 36%, 70%); */
-}
-
-.thin-text {
+.BA-mainPinkTitle {
   display: block;
-  color: hsl(0, 21%, 39%);
+  color: hsl(0, 36%, 70%);
   font-size: 2.25em;
   font-weight: 300;
-  letter-spacing: 11.2px;
+  letter-spacing: 8.2px;
   text-transform: uppercase;
 }
 
-.thick-text {
+.BA-mainThickTitle {
   color: hsl(0, 6%, 24%);
-  font-family: Josefin Sans, sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2em;
-  letter-spacing: 16.2px;
+  letter-spacing: 10.2px;
 }
 
-.main-pinkText {
-  color: hsl(0, 21%, 39%);
-  line-height: 1.5em;
+.BA-mainParagraph {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.75em;
   font-size: .75em;
   font-weight: 300;
+  padding: 5px 45px 17px;
 }
 
-.center {
-  display: inline;
-  /* top: 50%;
-  left: 50%; */
-  transform: translate(-50%, -50%);
+#BA-form {
+  display: flex;
+  justify-content: center;
+  border: 2px dotted #bada55;
 }
 
-input[type="checkbox"] {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  -webkit-appearance: none;
-  background-color: #c6c6c6;
-  outline: none;
-  border-radius: 20px;
-  box-shadow: inset 0 0 5px rgb(0, 0, 0, .2);
-  transition: .5s;
+.BA-email-input {
+  width: 60%;
+  height: 38px;
+  border: 0.5px solid hsl(0, 36%, 70%);
+  border-radius: 25px;
+  padding: 3px 30px;
+  cursor: pointer;
 }
 
-input:checked[type="checkbox"] {
-  background: #BADA55;
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 12px;
+  opacity: 1;
 }
 
-input[type="checkbox"]:before {
+.arrow-icon {
+  background-image: url("images/icon-arrow.svg");
+}
+
+.BA-mainButton {
+  position: absolute;
+  right: 57px;
+  height: 47px;
+  width: 59px;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 4px 4px 4px #aaa;
+  cursor: pointer;
+  margin: 0;
+}
+
+button:hover {
+  opacity: .75;
+}
+
+#hiddinButton {
+  visibility: hidden;
+}
+
+footer {
+  margin-top: 25px;
+}
+
+/* input[type="email"]:before {
   content: "";
   position: absolute;
   width: 40px;
@@ -93,14 +120,14 @@ input[type="checkbox"]:before {
   transform: scale(1.1);
   box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
   transition: .5s;
-}
+} */
 
-input:checked[type="checkbox"]:before {
-  left: 60px;
+/* input:checked[type="email"]:before {
+  left: 60px; */
 
-  /* @media screen (min-width:375px) {} */
+/* @media screen (min-width:375px) {} */
 
-  /* - Linear,
+/* - Linear,
 135deg,
 from hsl(0, 0%, 100%),
 to hsl(0, 100%, 98%) - Linear,

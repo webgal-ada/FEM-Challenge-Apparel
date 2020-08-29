@@ -26,46 +26,50 @@
 </head>
 
 <body>
-
-  <header class="BA-header">
-    <img src="images/logo.svg" class="logo" alt="apparel-pic" />
-  </header>
-  <!--------- img right, text left for desktop----------------->
   <main>
+    <header class="BA__header">
+      <img src="images/logo.svg" class="BA__header-logo" alt="company logo" />
+    </header>
+    <!--------- img right, text left for desktop----------------->
     <img src="images/hero-mobile.jpg" alt="" />
-    <div class="BA-mainTitle">
-      <span class="BA-mainPinkTitle">We're<br></span>
-      <span class="BA-mainThickTitle">coming<br> soon</span>
-    </div>
-    <div class="BA-mainParagraph">
-      Hello fellow shoppers! We're currently building our new fashion
-      store. Add your email below to stay up-to-date with announcements
-      and our launch deals.
-    </div>
-    <!--------- EMAIL INPUT WITH BUTTON----------------->
-    <form id="BA-form">
-      <input class="BA-email-input" type="text" name="email" id="email" placeholder="Email Address" required="">
 
-      <img src="images/icon-error.svg" alt="error-icon" id="hiddinButton" />
+    <div class="main__container-left">
+      <div class="article__main-Title">
+        <span class="article__main-PinkTitle">We're<br></span>
+        <span class="article__main-ThickTitle">coming<br>soon</span>
+        <div class="article__main-Paragraph">
+          Hello fellow shoppers! We're currently building our new fashion
+          store. Add your email below to stay up-to-date with announcements
+          and our launch deals.
+        </div>
+        <!---------------- form with input and gradient button---------------->
+        <form id="form">
+          <input type="email" id="email" placeholder="Email Address Please">
 
-      <button class="BA-mainButton" id="submit" class="arrow-icon">
-        <img src="images/icon-arrow.svg" alt="arrow">
-      </button>
-      </input>
-    </form>
-    <!-- <p class="error-msg">Please provide a email address.</p> <!--------- EMAIL INPUT WITH BUTTON----------------->
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon" />
+
+          <button>
+            <img src="images/icon-arrow.svg" alt="arrow-icon">
+          </button>
+          <small>Please provide a valid email.</small>
+        </form>
+      </div>
+
+
+    </div>
+    <!--<p class="error-msg">Please provide a valid email.</p> <!-- EMAIL INPUT WITH BUTTON----------------->
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+          href="#">Aurora D'aurora</a>.
+      </p>
+    </footer>
+    </div>
   </main>
 
-
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-        href="#">Aurora D'aurora</a>.
-    </p>
-  </footer>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

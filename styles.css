@@ -14,10 +14,11 @@ html {
 body {
   margin: 0;
   width: 100vw;
+  height: 100vh;
   font-size: 16px;
   font-family: Josefin Sans, sans-serif;
 }
-.main__container-left {
+.main__container-bgPattern {
   background-image: url("images/bg-pattern-desktop.svg");
   background-size: cover;
   background-position: center;
@@ -43,7 +44,7 @@ body {
   display: block;
   color: hsl(0, 36%, 70%);
   font-size: 2.25em;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 8.2px;
   text-transform: uppercase;
 }
@@ -51,7 +52,7 @@ body {
 .article__main-ThickTitle {
   color: hsl(0, 6%, 24%);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2em;
   letter-spacing: 10.2px;
 }
@@ -59,15 +60,16 @@ body {
 .article__main-Paragraph {
   color: hsl(0, 36%, 70%);
   line-height: 1.75em;
-  font-size: 0.75em;
-  font-weight: 300;
-  padding: 15px 40px 20px 40px;
+  font-size: 0.85em;
+  font-weight: 200;
+  padding: 15px 42px 20px 42px;
+  letter-spacing: 0.2px;
 }
 #form {
   position: relative;
 }
 input {
-  width: 72%;
+  width: 65%;
   height: 40px;
   border: 0.5px solid hsl(0, 36%, 70%);
   border-radius: 25px;
@@ -97,7 +99,7 @@ button {
   border-radius: 100px;
   position: absolute;
   top: 0;
-  right: 22px;
+  right: 34px;
   cursor: pointer;
   margin: 0;
 }
@@ -117,7 +119,7 @@ small {
 }
 
 footer {
-  margin-top: 25px;
+  padding: 25px;
 }
 
 /* input[type="email"]:before {

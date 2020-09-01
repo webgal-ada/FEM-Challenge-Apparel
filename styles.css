@@ -17,24 +17,27 @@ body {
   height: 100vh;
   font-size: 16px;
   font-family: Josefin Sans, sans-serif;
-}
-.main__container-bgPattern {
   background-image: url("images/bg-pattern-desktop.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0;
 }
 .BA__header {
   background-color: #fff;
   text-align: left;
 }
-
 .BA__header-logo {
   width: 100px;
   padding: 23px;
 }
 
+
+
+
+.main__container-left{
+  display:flex;
+  flex-direction: column;
+}
 .article__main-Title {
   text-align: center;
   padding-top: 40px;
@@ -112,12 +115,46 @@ small {
   margin-top: 10px;
   margin-left: 30px;
 }
-@media screen and(min-width:375px) {
-  body {
-    background-color: lightgreen;
+  .rightSideImage {
+    background-image: url("images/hero-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
   }
-}
 
+
+
+
+
+ 
+ @media screen and (min-width: 400px) {
+   .mobile-hero {
+    display:none; 
+   }
+   .main__container-left {
+     display:inline-block;
+     border: 2px solid black;
+     max-width: 450px;
+   }
+    .rightSideImage {
+      border: 2px solid red;
+         background-image: url("images/hero-desktop.jpg");
+         background-position: center;
+        }
+  }
+ 
+
+// @media screen and (min-width: 580px) {
+//   .main__container-left {
+//     display: inline-block;
+//     width: 50%;
+//   }
+//   .rightSideImage {
+//     background-image: url("images/hero-desktop.jpg");
+//     background-position: center;
+//   }
+}
 footer {
   padding: 25px;
 }

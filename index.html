@@ -26,53 +26,57 @@
 </head>
 
 <body>
-  <main>
-    <header class="BA__header">
-      <img src="images/logo.svg" class="BA__header-logo" alt="company logo" />
-    </header>
-    <!--------- img right, text left for desktop----------------->
+  <header class="BA__header">
+    <img src="images/logo.svg" class="BA__header-logo" alt="company logo" />
+  </header>
+  <!--------- img right, text left for desktop----------------->
 
 
-    <!-- <picture> -->
-    <!-- <source srcset="images/hero-deskktop.jpg" media="min-width:400px">
+  <!-- <picture> -->
+  <!-- <source srcset="images/hero-deskktop.jpg" media="min-width:400px">
       </source> -->
-    <img src="images/hero-mobile.jpg" class="mobile-hero" alt="girl pic">
-    <!-- </picture> -->
+  <img src="images/hero-mobile.jpg" class="mobile-hero" alt="girl pic">
+  <!-- </picture> -->
 
+  <main>
+    <div class="main__container">
+      <div class="main__container-left">
+        <div class="article__main-Title">
+          <span class="article__main-PinkTitle">We're<br></span>
+          <span class="article__main-ThickTitle">coming<br>soon</span>
+          <div class="article__main-Paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </div>
+          <!---------------- form with input and gradient button---------------->
+          <form id="form">
+            <input type="email" id="email" placeholder="Email Address Please">
 
-    <div class="main__container-left">
-      <div class="article__main-Title">
-        <span class="article__main-PinkTitle">We're<br></span>
-        <span class="article__main-ThickTitle">coming<br>soon</span>
-        <div class="article__main-Paragraph">
-          Hello fellow shoppers! We're currently building our new fashion
-          store. Add your email below to stay up-to-date with announcements
-          and our launch deals.
+            <img src="images/icon-error.svg" alt="error-icon" class="error-icon" />
+
+            <button>
+              <img src="images/icon-arrow.svg" alt="arrow-icon">
+            </button>
+            <small>Please provide a valid email.</small>
+          </form>
         </div>
-        <!---------------- form with input and gradient button---------------->
-        <form id="form">
-          <input type="email" id="email" placeholder="Email Address Please">
-
-          <img src="images/icon-error.svg" alt="error-icon" class="error-icon" />
-
-          <button>
-            <img src="images/icon-arrow.svg" alt="arrow-icon">
-          </button>
-          <small>Please provide a valid email.</small>
-        </form>
       </div>
-
-      <!--<p class="error-msg">Please provide a valid email.</p> <!-- EMAIL INPUT WITH BUTTON----------------->
-      <footer>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-            href="#">Aurora D'aurora</a>.
-        </p>
-      </footer>
     </div>
-    <div class="right rightSideImage"></div>
+    <div class="right rightSideImage">
+      <!-- <img src="images/hero-desktop.jpg"> -->
+    </div>
   </main>
+  <!--<p class="error-msg">Please provide a valid email.</p> <!-- EMAIL INPUT WITH BUTTON----------------->
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Aurora D'aurora</a>.
+    </p>
+  </footer>
+
+
 
   <script src="scripts.js"></script>
 </body>

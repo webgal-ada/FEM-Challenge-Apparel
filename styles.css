@@ -22,29 +22,31 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+main {
+  display: flex;
+}
+
 .BA__header {
   background-color: #fff;
   text-align: left;
 }
+
 .BA__header-logo {
   width: 100px;
   padding: 23px;
 }
 
-
-
-
-.main__container-left{
-  display:flex;
-  flex-direction: column;
+.main__container-left {
+  border: 2px solid black;
+  max-width: 450px;
 }
+
 .article__main-Title {
   text-align: center;
   padding-top: 40px;
 }
 
 .article__main-PinkTitle {
-  display: block;
   color: hsl(0, 36%, 70%);
   font-size: 2.25em;
   font-weight: 200;
@@ -68,9 +70,11 @@ body {
   padding: 15px 42px 20px 42px;
   letter-spacing: 0.2px;
 }
+
 #form {
   position: relative;
 }
+
 input {
   width: 65%;
   height: 40px;
@@ -86,12 +90,14 @@ input::placeholder {
   font-size: 12px;
   opacity: 1;
 }
+
 .error-icon {
   display: none;
   position: absolute;
   top: 14px;
   right: 120px;
 }
+
 button {
   background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   box-shadow: 4px 4px 4px #aaa;
@@ -106,82 +112,39 @@ button {
   cursor: pointer;
   margin: 0;
 }
+
 button:hover {
   opacity: 0.75;
 }
+
 small {
   color: hsl(0, 93%, 68%);
   display: none;
   margin-top: 10px;
   margin-left: 30px;
 }
-  .rightSideImage {
-    background-image: url("images/hero-desktop.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-  }
 
-
-
-
-
- 
- @media screen and (min-width: 400px) {
-   .mobile-hero {
-    display:none; 
-   }
-   .main__container-left {
-     display:inline-block;
-     border: 2px solid black;
-     max-width: 450px;
-   }
-    .rightSideImage {
-      border: 2px solid red;
-         background-image: url("images/hero-desktop.jpg");
-         background-position: center;
-        }
-  }
- 
-
-// @media screen and (min-width: 580px) {
-//   .main__container-left {
-//     display: inline-block;
-//     width: 50%;
-//   }
-//   .rightSideImage {
-//     background-image: url("images/hero-desktop.jpg");
-//     background-position: center;
-//   }
+.right {
+  display: none;
 }
+
+.mobile-hero {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .mobile-hero {
+    display: none;
+  }
+}
+.rightSideImage {
+  border: 2px dotted red;
+  background-image: url("images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 100vh;
+}
+
 footer {
-  padding: 25px;
+  padding: 50px;
 }
-
-/* input[type="email"]:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  top: 0;
-  left: 0;
-  background: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
-  transition: .5s;
-} */
-
-/* input:checked[type="email"]:before {
-  left: 60px; */
-
-/* @media screen (min-width:375px) {} */
-
-/* - Linear,
-135deg,
-from hsl(0, 0%, 100%),
-to hsl(0, 100%, 98%) - Linear,
-135deg,
-from hsl(0, 80%, 86%),
-to hsl(0, 74%, 74%) */
